@@ -59,8 +59,38 @@ type typeformResp struct {
 	Form_response fromResponse `json:"form_response"`
 }
 
-func digestTypeformAnswer(fieldAnswer []interface{}) (map[string]any, error) {
+var NewIncidenceReportMap map[string]string
+var InternalIncidenceReportMap map[string]string
+
+func init() {
+	//forms fields id for new incidences
+	NewIncidenceReportMap["qJrspeePNrLf"] = "method"
+	NewIncidenceReportMap["qxvyhBkq13zP"] = "store_name"
+	NewIncidenceReportMap["eYu8WCWbzE6I"] = "client_name"
+	NewIncidenceReportMap["tu0PjF5FHsVz"] = "email"
+	NewIncidenceReportMap["qybB8lcFUqI6"] = "phone"
+	NewIncidenceReportMap["fpBdfsWHIMpG"] = "location"
+	NewIncidenceReportMap["NKEuGeR5gN4w"] = "description"
+	NewIncidenceReportMap["DuFU6b0JpvGs"] = "availability"
+
+	//form fields id for internal incidences
+	InternalIncidenceReportMap["cI0N9BlDnNUl"] = "installer"
+	InternalIncidenceReportMap["mesBgqpX5Vo7"] = "order_number"
+	InternalIncidenceReportMap["vXPVBa5dwOUm"] = "description"
+	InternalIncidenceReportMap["lOEMisiljIby"] = "visual_ref1"
+}
+
+func digestTypeformAnswer(fieldAnswer []interface{}, new bool) (map[string]any, error) {
+
 	valuesMap := make(map[string]any)
+	var fieldsMap map[string]string
+
+	if new {
+		fieldsMap = NewIncidenceReportMap
+	} else {
+		fieldsMap = InternalIncidenceReportMap
+	}
+
 	for _, value := range fieldAnswer {
 		v, ok := value.(multipleChoiceAnswer)
 		if !ok {
@@ -68,9 +98,9 @@ func digestTypeformAnswer(fieldAnswer []interface{}) (map[string]any, error) {
 			if !ok {
 				return nil, errors.New("Not supported answer type")
 			}
-			valuesMap[v.Field.Id] = v
+			valuesMap[fieldsMap[v.Field.Id]] = v
 		}
-		valuesMap[v.Field.Id] = v
+		valuesMap[fieldsMap[v.Field.Id]] = v
 	}
 	return valuesMap, nil
 }

@@ -85,7 +85,6 @@ type tCard struct {
 const (
 	createCardBaseUrl     = "https://api.trello.com/1/cards?idList=%v&key=%v&token=%v&desc=%v"
 	setOrderNumberBaseUrl = "https://api.trello.com/1/card/%v/customField/%v/item?&key=%v&token=%v" //cardId, customFieldId
-	desc                  = "temporal description"
 )
 
 func getCardStruct(r *http.Response) (*tCard, error) {
@@ -127,7 +126,13 @@ func publishTrelloCard(t typeformResp) error {
 			if listId, err := getEnvVar("NEW_INC_LIST_ID"); err != nil {
 				return err
 			} else {
-				resp, err := http.Post(fmt.Sprintf(createCardBaseUrl, listId, apiKey, token, desc), "application/json", nil)
+
+				data, err := digestTypeformAnswer(t.Form_response.Definition.Answers, true)
+				if err != nil {
+					return err
+				}
+
+				resp, err := http.Post(fmt.Sprintf(createCardBaseUrl, listId, apiKey, token, data["description"]), "application/json", nil)
 				if err != nil {
 					return err
 				}
@@ -135,12 +140,11 @@ func publishTrelloCard(t typeformResp) error {
 				defer resp.Body.Close()
 
 				card, err := getCardStruct(resp)
-
 				if err != nil {
 					return err
 				}
-				return nil
 
+				return NIRPopulateCustomFields(card.ShortUrl, t)
 			}
 		}
 	case internalIncFormId:
@@ -148,7 +152,13 @@ func publishTrelloCard(t typeformResp) error {
 			if listId, err := getEnvVar("INTERNAL_INC_LIST_ID"); err != nil {
 				return err
 			} else {
-				resp, err := http.Post(fmt.Sprintf(createCardBaseUrl, listId, apiKey, token, desc), "application/json", nil)
+
+				data, err := digestTypeformAnswer(t.Form_response.Definition.Answers, true)
+				if err != nil {
+					return err
+				}
+
+				resp, err := http.Post(fmt.Sprintf(createCardBaseUrl, listId, apiKey, token, data["description"]), "application/json", nil)
 				if err != nil {
 					return err
 				}
@@ -159,7 +169,8 @@ func publishTrelloCard(t typeformResp) error {
 				if err != nil {
 					return err
 				}
-				return nil
+
+				return IIRPopulateCustomFields(card.ShortUrl, t)
 			}
 		}
 	default:
@@ -170,12 +181,12 @@ func publishTrelloCard(t typeformResp) error {
 }
 
 //IIR -> internal incidence report
-func IIRPopulateCustomFields(cardId string, t typeformResp) error {
+func IIRPopulateCustomFields(cardShortcut string, t typeformResp) error {
 	return nil
 }
 
 //NIR -> new incidence report
-func NIRPopulateCustomFields(cardId string, t typeformResp) error {
+func NIRPopulateCustomFields(cardShortcut string, t typeformResp) error {
 	return nil
 }
 
