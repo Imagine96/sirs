@@ -1,0 +1,858 @@
+{
+    "id": "62e21be41327e80bc1910e88",
+    "address": null,
+    "badges": {
+        "attachmentsByType": {
+            "trello": {
+                "board": 0,
+                "card": 0
+            }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 2,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": false,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+    },
+    "checkItemStates": [],
+    "closed": false,
+    "coordinates": null,
+    "creationMethod": null,
+    "dueComplete": false,
+    "dateLastActivity": "2022-07-28T08:50:34.695Z",
+    "desc": "",
+    "descData": {
+        "emoji": {}
+    },
+    "due": null,
+    "dueReminder": null,
+    "email": "rubenguedes+2ynnt7vlub69ltwbc9x+2yt89nxbmezkk1qw1oo+20qvbs1wim@boards.trello.com",
+    "idBoard": "62c4484916e2b47a840b4de5",
+    "idChecklists": [
+        "62e21be5de6c1f7c87e2cbd6"
+    ],
+    "idLabels": [],
+    "idList": "62c5564b5226b01599b4a4dc",
+    "idMembers": [],
+    "idMembersVoted": [],
+    "idShort": 106,
+    "idAttachmentCover": null,
+    "labels": [],
+    "limits": {
+        "attachments": {
+            "perCard": {
+                "status": "ok",
+                "disableAt": 1000,
+                "warnAt": 800
+            }
+        },
+        "checklists": {
+            "perCard": {
+                "status": "ok",
+                "disableAt": 500,
+                "warnAt": 400
+            }
+        },
+        "stickers": {
+            "perCard": {
+                "status": "ok",
+                "disableAt": 70,
+                "warnAt": 56
+            }
+        }
+    },
+    "locationName": null,
+    "manualCoverAttachment": false,
+    "name": "template integration test",
+    "pos": 65535,
+    "shortLink": "39rr1amL",
+    "shortUrl": "https://trello.com/c/39rr1amL",
+    "staticMapUrl": null,
+    "start": null,
+    "subscribed": false,
+    "url": "https://trello.com/c/39rr1amL/106-template-integration-test",
+    "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+    },
+    "isTemplate": false,
+    "cardRole": null,
+    "checklists": [
+        {
+            "id": "62e21be5de6c1f7c87e2cbd6",
+            "name": "Estado",
+            "idBoard": "62c4484916e2b47a840b4de5",
+            "idCard": "62e21be41327e80bc1910e88",
+            "pos": 16384,
+            "limits": {
+                "checkItems": {
+                    "perChecklist": {
+                        "status": "ok",
+                        "disableAt": 200,
+                        "warnAt": 160
+                    }
+                }
+            },
+            "creationMethod": null,
+            "checkItems": [
+                {
+                    "id": "62e21be51a713a5fc2e3a03c",
+                    "name": "Confirmado",
+                    "nameData": {
+                        "emoji": {}
+                    },
+                    "pos": 16384,
+                    "due": null,
+                    "idMember": null,
+                    "idChecklist": "62e21be5de6c1f7c87e2cbd6",
+                    "state": "incomplete"
+                },
+                {
+                    "id": "62e21be590f37b419ddf8ea0",
+                    "name": "Listo",
+                    "nameData": {
+                        "emoji": {}
+                    },
+                    "pos": 32768,
+                    "due": null,
+                    "idMember": null,
+                    "idChecklist": "62e21be5de6c1f7c87e2cbd6",
+                    "state": "incomplete"
+                }
+            ]
+        }
+    ],
+    "customFieldItems": [
+        {
+            "id": "62e21d76fbac088f53d58d81",
+            "idValue": "62c584baec8a5c731ff7fb1f",
+            "idCustomField": "62c584baec8a5c731ff7fb1c",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e21d7a7426435f8120780e",
+            "value": {
+                "text": "0-000000"
+            },
+            "idCustomField": "62cfd6a1ca81118c3d84caac",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e21d8197003270e6fc94d1",
+            "value": {
+                "text": "Particular"
+            },
+            "idCustomField": "62e21c03e837e24019703ea7",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e21d8859dfae6481c30e28",
+            "value": {
+                "text": "Alberto"
+            },
+            "idCustomField": "62e21cbca9f76f7245154417",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e21d9023238b37d7ef4da9",
+            "value": {
+                "text": "mail@mail.com"
+            },
+            "idCustomField": "62e21cc8332faa093067d1ab",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e21d9506c9b3733f92222e",
+            "value": {
+                "text": "5555555555"
+            },
+            "idCustomField": "62e21cd86edb5f1fb90674aa",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e21d9bdeee218f57ab75b7",
+            "value": {
+                "text": "somewhere someplace"
+            },
+            "idCustomField": "62e21ce608abc7502f0df2e3",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e21da4fcb6238ef4d08432",
+            "value": {
+                "text": "variable"
+            },
+            "idCustomField": "62e21cfa8d1e7f229bae09df",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e22029ac5cba3744f3c3ab",
+            "value": {
+                "text": "pepe"
+            },
+            "idCustomField": "62e21fc62c53508ebc065a02",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        },
+        {
+            "id": "62e24dda3f8781575a901b38",
+            "value": {
+                "text": "tienda"
+            },
+            "idCustomField": "62e21c31746d3c2ad13be3bb",
+            "idModel": "62e21be41327e80bc1910e88",
+            "modelType": "card"
+        }
+    ],
+    "members": [],
+    "pluginData": [],
+    "actions": [
+        {
+            "id": "62e24dda3f8781575a901b3a",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21c31746d3c2ad13be3bb",
+                    "name": "Nombre de tienda",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e24dda3f8781575a901b38",
+                    "value": {
+                        "text": "tienda"
+                    },
+                    "idCustomField": "62e21c31746d3c2ad13be3bb",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T08:50:34.689Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e22029ac5cba3744f3c3ad",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21fc62c53508ebc065a02",
+                    "name": "Montador",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e22029ac5cba3744f3c3ab",
+                    "value": {
+                        "text": "pepe"
+                    },
+                    "idCustomField": "62e21fc62c53508ebc065a02",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:35:37.594Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21da4fcb6238ef4d08434",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21cfa8d1e7f229bae09df",
+                    "name": "disponibilidad de contacto",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e21da4fcb6238ef4d08432",
+                    "value": {
+                        "text": "variable"
+                    },
+                    "idCustomField": "62e21cfa8d1e7f229bae09df",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:52.585Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21d9bdeee218f57ab75b9",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21ce608abc7502f0df2e3",
+                    "name": "dirección",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e21d9bdeee218f57ab75b7",
+                    "value": {
+                        "text": "somewhere someplace"
+                    },
+                    "idCustomField": "62e21ce608abc7502f0df2e3",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:43.712Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21d9506c9b3733f922230",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21cd86edb5f1fb90674aa",
+                    "name": "telefono",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e21d9506c9b3733f92222e",
+                    "value": {
+                        "text": "5555555555"
+                    },
+                    "idCustomField": "62e21cd86edb5f1fb90674aa",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:37.176Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21d9023238b37d7ef4dab",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21cc8332faa093067d1ab",
+                    "name": "email",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e21d9023238b37d7ef4da9",
+                    "value": {
+                        "text": "mail@mail.com"
+                    },
+                    "idCustomField": "62e21cc8332faa093067d1ab",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:32.529Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21d8859dfae6481c30e2a",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21cbca9f76f7245154417",
+                    "name": "Nombre de cliente",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e21d8859dfae6481c30e28",
+                    "value": {
+                        "text": "Alberto"
+                    },
+                    "idCustomField": "62e21cbca9f76f7245154417",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:24.121Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21d8197003270e6fc94d3",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62e21c03e837e24019703ea7",
+                    "name": "Tipo de Cliente",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e21d8197003270e6fc94d1",
+                    "value": {
+                        "text": "Particular"
+                    },
+                    "idCustomField": "62e21c03e837e24019703ea7",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:17.031Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21d7a7426435f81207810",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "value": null
+                },
+                "customField": {
+                    "id": "62cfd6a1ca81118c3d84caac",
+                    "name": "N pedido",
+                    "type": "text"
+                },
+                "customFieldItem": {
+                    "id": "62e21d7a7426435f8120780e",
+                    "value": {
+                        "text": "0-000000"
+                    },
+                    "idCustomField": "62cfd6a1ca81118c3d84caac",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:10.186Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21d76fbac088f53d58d83",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "old": {
+                    "idValue": null
+                },
+                "customField": {
+                    "id": "62c584baec8a5c731ff7fb1c",
+                    "name": "Priority",
+                    "type": "list"
+                },
+                "customFieldItem": {
+                    "id": "62e21d76fbac088f53d58d81",
+                    "idValue": "62c584baec8a5c731ff7fb1f",
+                    "idCustomField": "62c584baec8a5c731ff7fb1c",
+                    "idModel": "62e21be41327e80bc1910e88",
+                    "modelType": "card"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                },
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                }
+            },
+            "appCreator": null,
+            "type": "updateCustomFieldItem",
+            "date": "2022-07-28T05:24:06.414Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21be5de6c1f7c87e2cbde",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                },
+                "checklist": {
+                    "id": "62e21be5de6c1f7c87e2cbd6",
+                    "name": "Estado"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                }
+            },
+            "appCreator": {
+                "id": "56ff07afbc287582d36e19ac",
+                "name": "Butler",
+                "icon": {
+                    "url": "https://app.butlerfortrello.com/assets/icon-butler-bot.png"
+                }
+            },
+            "type": "addChecklistToCard",
+            "date": "2022-07-28T05:17:25.333Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        },
+        {
+            "id": "62e21be41327e80bc1910e91",
+            "idMemberCreator": "62bd73a904eba97bc86f56e5",
+            "data": {
+                "card": {
+                    "id": "62e21be41327e80bc1910e88",
+                    "name": "template integration test",
+                    "idShort": 106,
+                    "shortLink": "39rr1amL"
+                },
+                "list": {
+                    "id": "62c5564b5226b01599b4a4dc",
+                    "name": "Nuevos"
+                },
+                "board": {
+                    "id": "62c4484916e2b47a840b4de5",
+                    "name": "INCIDENCIAS",
+                    "shortLink": "soObSaCU"
+                }
+            },
+            "appCreator": null,
+            "type": "createCard",
+            "date": "2022-07-28T05:17:24.068Z",
+            "limits": null,
+            "memberCreator": {
+                "id": "62bd73a904eba97bc86f56e5",
+                "activityBlocked": false,
+                "avatarHash": "83314f2177e86bdfbf3e2f913eb9fb25",
+                "avatarUrl": "https://trello-members.s3.amazonaws.com/62bd73a904eba97bc86f56e5/83314f2177e86bdfbf3e2f913eb9fb25",
+                "fullName": "Rubén Guedes",
+                "idMemberReferrer": "6274e9a16864177c3acd3db8",
+                "initials": "RG",
+                "nonPublic": {
+                    "fullName": "Rubén Guedes",
+                    "initials": "RG",
+                    "avatarHash": null
+                },
+                "nonPublicAvailable": true,
+                "username": "rubenguedes"
+            }
+        }
+    ]
+}

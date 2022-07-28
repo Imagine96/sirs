@@ -10,85 +10,88 @@ import (
 )
 
 type fieldDetails struct {
-	Id   string `json:"id"`
-	Type string `json:"type"`
+	Id   string `json:"id,omitempty"`
+	Type string `json:"type,omitempty"`
 }
 
 type multipleChoiceAnswer struct {
-	Type   string `json:"type"`
+	Type   string `json:"type,omitempty"`
 	Choice struct {
-		Label string `json:"label"`
-	} `json:"choice"`
-	Field fieldDetails `json:"field"`
+		Label string `json:"label,omitempty"`
+	} `json:"choice,omitempty"`
+	Field fieldDetails `json:"field,omitempty"`
 }
 
 type textAnswer struct {
-	Type  string       `json:"type"`
-	Text  string       `json:"text"`
-	Field fieldDetails `json:"field"`
+	Type  string       `json:"type,omitempty"`
+	Text  string       `json:"text,omitempty"`
+	Field fieldDetails `json:"field,omitempty"`
 }
 
 type formField struct {
-	Id                        string `json:"id"`
-	Title                     string `json:"title"`
-	Type                      string `json:"type"`
-	Ref                       string `json:"ref"`
-	Allow_multiple_selections bool   `json:"allow_multiple_selections"`
-	Allow_other_choice        bool   `json:"allow_other_choice"`
+	Id                        string `json:"id,omitempty"`
+	Title                     string `json:"title,omitempty"`
+	Type                      string `json:"type,omitempty"`
+	Ref                       string `json:"ref,omitempty"`
+	Allow_multiple_selections bool   `json:"allow_multiple_selections,omitempty"`
+	Allow_other_choice        bool   `json:"allow_other_choice,omitempty"`
 }
 
 type fromResponse struct {
-	Form_id      string `json:"form_id"`
-	Token        string `json:"token"`
-	Submitted_at string `json:"submitted_at"`
-	Landed_at    string `json:"landed_at"`
+	Form_id      string `json:"form_id,omitempty"`
+	Token        string `json:"token,omitempty"`
+	Submitted_at string `json:"submitted_at,omitempty"`
+	Landed_at    string `json:"landed_at,omitempty"`
 	Hidden       *struct {
-		Target string `json:"target"`
+		Target string `json:"target,omitempty"`
 	} `json:"hidden,omitempty"`
 	Definition struct {
-		Id      string        `json:"id"`
-		Title   string        `json:"title"`
-		Fields  []formField   `json:"fields"`
-		Answers []interface{} `json:"answers"`
-	} `json:"definition"`
+		Id      string        `json:"id,omitempty"`
+		Title   string        `json:"title,omitempty"`
+		Fields  []formField   `json:"fields,omitempty"`
+		Answers []interface{} `json:"answers,omitempty"`
+	} `json:"definition,omitempty"`
 }
 
 type typeformResp struct {
-	Event_id      string       `json:"event_id"`
-	Event_type    string       `json:"event_type"`
-	Form_response fromResponse `json:"form_response"`
+	Event_id      string       `json:"event_id,omitempty"`
+	Event_type    string       `json:"event_type,omitempty"`
+	Form_response fromResponse `json:"form_response,omitempty"`
 }
 
-var NewIncidenceReportMap map[string]string
-var InternalIncidenceReportMap map[string]string
+//TF -> typeform form
+var tFNewIncidenceReportMap map[string]string
+var tFInternalIncidenceReportMap map[string]string
+
+//TB -> trello board
+var TBIncidenceReportMap map[string]string
 
 func init() {
-	//forms fields id for new incidences
-	NewIncidenceReportMap["qJrspeePNrLf"] = "method"
-	NewIncidenceReportMap["qxvyhBkq13zP"] = "store_name"
-	NewIncidenceReportMap["eYu8WCWbzE6I"] = "client_name"
-	NewIncidenceReportMap["tu0PjF5FHsVz"] = "email"
-	NewIncidenceReportMap["qybB8lcFUqI6"] = "phone"
-	NewIncidenceReportMap["fpBdfsWHIMpG"] = "location"
-	NewIncidenceReportMap["NKEuGeR5gN4w"] = "description"
-	NewIncidenceReportMap["DuFU6b0JpvGs"] = "availability"
+	//forms fields id for new incidences - target custom field id
+	tFNewIncidenceReportMap["qJrspeePNrLf"] = "62e21c03e837e24019703ea7" //client_type
+	tFNewIncidenceReportMap["qxvyhBkq13zP"] = "store_name"
+	tFNewIncidenceReportMap["eYu8WCWbzE6I"] = "62e21cbca9f76f7245154417" //client_name
+	tFNewIncidenceReportMap["tu0PjF5FHsVz"] = "62e21cc8332faa093067d1ab" //client_email
+	tFNewIncidenceReportMap["qybB8lcFUqI6"] = "62e21cd86edb5f1fb90674aa" //client_phone
+	tFNewIncidenceReportMap["fpBdfsWHIMpG"] = "62e21ce608abc7502f0df2e3" //client_direction
+	tFNewIncidenceReportMap["NKEuGeR5gN4w"] = "description"              //desc
+	tFNewIncidenceReportMap["DuFU6b0JpvGs"] = "62e21cfa8d1e7f229bae09df" //client_availability
 
-	//form fields id for internal incidences
-	InternalIncidenceReportMap["cI0N9BlDnNUl"] = "installer"
-	InternalIncidenceReportMap["mesBgqpX5Vo7"] = "order_number"
-	InternalIncidenceReportMap["vXPVBa5dwOUm"] = "description"
-	InternalIncidenceReportMap["lOEMisiljIby"] = "visual_ref1"
+	//form fields id for internal incidences - target custom field id
+	tFInternalIncidenceReportMap["cI0N9BlDnNUl"] = "62e21fc62c53508ebc065a02" //installer
+	tFInternalIncidenceReportMap["mesBgqpX5Vo7"] = "62cfd6a1ca81118c3d84caac" //order_number
+	tFInternalIncidenceReportMap["vXPVBa5dwOUm"] = "description"              //desc
 }
 
-func digestTypeformAnswer(fieldAnswer []interface{}, new bool) (map[string]any, error) {
+func digestTypeformAnswers(fieldAnswer []interface{}, new bool) (map[string]string, error) {
 
-	valuesMap := make(map[string]any)
+	valuesMap := make(map[string]string)
 	var fieldsMap map[string]string
 
 	if new {
-		fieldsMap = NewIncidenceReportMap
+		fieldsMap = tFNewIncidenceReportMap
 	} else {
-		fieldsMap = InternalIncidenceReportMap
+		fieldsMap = tFInternalIncidenceReportMap
 	}
 
 	for _, value := range fieldAnswer {
@@ -98,9 +101,9 @@ func digestTypeformAnswer(fieldAnswer []interface{}, new bool) (map[string]any, 
 			if !ok {
 				return nil, errors.New("Not supported answer type")
 			}
-			valuesMap[fieldsMap[v.Field.Id]] = v
+			valuesMap[fieldsMap[v.Field.Id]] = v.Text
 		}
-		valuesMap[fieldsMap[v.Field.Id]] = v
+		valuesMap[fieldsMap[v.Field.Id]] = v.Choice.Label
 	}
 	return valuesMap, nil
 }

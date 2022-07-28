@@ -127,7 +127,7 @@ func publishTrelloCard(t typeformResp) error {
 				return err
 			} else {
 
-				data, err := digestTypeformAnswer(t.Form_response.Definition.Answers, true)
+				data, err := digestTypeformAnswers(t.Form_response.Definition.Answers, true)
 				if err != nil {
 					return err
 				}
@@ -153,7 +153,7 @@ func publishTrelloCard(t typeformResp) error {
 				return err
 			} else {
 
-				data, err := digestTypeformAnswer(t.Form_response.Definition.Answers, true)
+				data, err := digestTypeformAnswers(t.Form_response.Definition.Answers, true)
 				if err != nil {
 					return err
 				}
